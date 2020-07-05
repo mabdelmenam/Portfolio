@@ -21,16 +21,13 @@
   left: 15px;
 }
 /******************************/
-/* @media handheld ,only screen and (min-width: 500px){
+ @media handheld ,only screen and (min-width: 500px){
   #about-me-info{
-    font-size: 1.19em;  
+    font-size: 0.9vw;  
   }
-  #about-me-section{
-    max-width: 100%;
-  }
-} */
+} 
 #about-me-section{
-  max-width: 100%;
+  align-items: center;
 }
 
 /*HOVER EFFECT*/
@@ -84,7 +81,7 @@
     color: rgb(0, 0, 0);
   }
   #about-me-info{
-    font-size: 1.19em;
+    font-size: 1.2vw; /*1.19em, 19px*/
     font-weight: bold;
     font-family:"Trebuchet MS", Helvetica, sans-serif;
     text-align:center;

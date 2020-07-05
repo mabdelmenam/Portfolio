@@ -55,11 +55,11 @@
     <!--SECTION 1 TITLE-->
     <div class="about-me-section">
       <img id="main-image" src="main-pic.png" class="rounded mx-auto d-block rounded-circle blocktext" style="width:220px;height:220px; margin-top: 45px;">
-      <p id="about-me-info">I am a recent graduate from Rutgers University with a degree in Computer Science. I am
-        currently pursuing a career in software development and am willing to relocate to do so. Some of the skills used
-        in my projects range from from HTML, CSS, and JavaScript to PHP, Python, and SQL.<br>I am always trying to learn
-        and consider myself to be a team-player, in that productivity is at its peak when all parties involved are
-        working cohesively.</p>
+      <p id="about-me-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.</p>
     </div>
 
     <!--<div class="container-for-links">
@@ -71,45 +71,127 @@
     <!--SECTION 2 TITLE-->
     <div class="container">
       <!--START CONTAINER-->
-
-
-      <!--PROJECT 1 START-->
+      <!--RESTAURANT PROJECT START-->
+      <!--BEGIN ROW-->
       <div class="row space-under">
-        <!--BEGIN ROW-->
         <div class="column">
           <div class="contain space">
-            <img src="pics/budget.png" class="image" /> <!-- 334 x 334 -->
+            <img src="pics/exam.png" class="image" /> <!-- 334 x 334 -->
             <div class="overlap">
-              <a class="text" href="#" data-toggle="modal" data-target="#budget-app">Read More</a>
+              <a class="text" href="#" data-toggle="modal" data-target="#restaurant">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="restaurant">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3>CS490: CS100 Exam System</h3>
+              </div>
+              <div class="modal-body">
+                <img src="modal-pics/exam.png" height="450" width="760" />
+                <p>Restaurant webpage</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--RESTAURANT PROJECT END-->
+        <!--SENIOR PROJECT START-->
+        <div class="column">
+          <div class="contain space">
+            <img src="pics/monster.png" class="image" /> <!-- 334 x 334 -->
+            <div class="overlap">
+              <a class="text" href="#" data-toggle="modal" data-target="#monster-homicide">Read More</a>
             </div>
           </div>
         </div>
 
 
-        <div class="modal fade" id="budget-app">
+        <div class="modal fade" id="monster-homicide">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <h3>Budget Application</h3>
+                <h3>Monster Homicide</h3>
               </div>
               <div class="modal-body">
-                <img src="modal-pics/budgetpic.png" height="450" width="760" />
-                <p>Application allows user to add income and expenses for a certain month and calculates how much money
-                  was made and spent in that month.<br />
-                  This application was done in during my, "The Complete JavaScript Course: 2018", by Jonas Schmedtmann<br /><br />
-                  <b>*Application displays overall income and expense.</b><br /><br />
-                  <b>*Gives the user the option to delete an item from the list in case an error was made.</b><br /></p>
+                <img src="modal-pics/monsterpic.png" height="450" width="760" />
+                <p>• Created a 2D-Platformer game using the Godot Game Engine, along with the GDScript programming
+                  language.<br />
+                  • Gained a new outlook on learning a new technology, and the time it takes to grasping and getting
+                  used to it.<br /><br />
+                  <b>Controls: <br />
+                    *Movement: Left and Right Arrow Keys<br />
+                    *Jump: Up Arrow Key<br />
+                    *Attack: X</b>
+
+                  <h4><b>IMPORTANT: Due to a bug with the game engine when exporting into HTML, try and use Firefox
+                      when trying to run the game instead of Google Chrome.
+                      If volume does not work, then also go and use FireFox to run the game.</b></h4>
+                </p>
+
               </div>
               <div class="modal-footer">
-                <a href="https://github.com/mabdelmenam/Budget-App-Project"><img src="modal-pics/github.png" width="44"
+                <a href="https://github.com/mabdelmenam/Monster-Homicide"><img src="modal-pics/github.png" width="44"
+                    height="44" /></a>
+                <a href="MonsterHomicide\MonsterHomicide.html">Play Game<img src="modal-pics/play.jpg" width="75"
                     height="44" /></a>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
         </div>
+        <!--SENIOR PROJECT END-->
+        <!--PROJECT 1 START-->
+        <div class="column">
+          <div class="contain">
+            <img src="pics/exam.png" class="image" /> <!-- 334 x 334 -->
+            <div class="overlap">
+              <a class="text" href="#" data-toggle="modal" data-target="#cs490">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="cs490">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3>CS490: CS100 Exam System</h3>
+              </div>
+              <div class="modal-body">
+                <img src="modal-pics/exam.png" height="450" width="760" />
+                <p>Developed an online exam system. The exam system will deal with only one type of question - open
+                  ended
+                  programming questions of the form: "Write a method named calcSomthing that takes parameters named a
+                  and
+                  b of type int, calculates (whatever), and returns the appropriate value." You may choose either Java
+                  or
+                  Python as your language and assume questions will be of the level appropriate for a course similar to
+                  CS 100 or CS 113.<br><br>
+
+                  <b>Fully functional system supporting four use-cases:</b><br><br>
+
+                  Instructor may add questions to a question bank.<br>
+                  Instructor may select questions from the question bank to create an exam.<br>
+                  Student may take exam, and (after Intructor releases scores).<br>
+                  Student may check exam score and feedback.</p>
+              </div>
+              <div class="modal-footer">
+                <!-- <a href="https://github.com/mabdelmenam/PricelineHackathon"><img src="modal-pics/github.png" width="44" height="44"/></a>-->
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <!--PROJECT 1 END-->
-        <!--PROJECT 2 START-->
+        <!--END ROW-->
+      </div>
+      <!--PROJECT 2 START-->
+      <!--BEGIN ROW-->
+      <div class="row space-under">
         <div class="column">
           <div class="contain space">
             <img src="pics/crime.png" class="image" /> <!-- 334 x 334 -->
@@ -156,39 +238,31 @@
         <!--PROJECT 3 START-->
         <div class="column">
           <div class="contain">
-            <img src="pics/exam.png" class="image" /> <!-- 334 x 334 -->
+            <img src="pics/budget.png" class="image" /> <!-- 334 x 334 -->
             <div class="overlap">
-              <a class="text" href="#" data-toggle="modal" data-target="#cs490">Read More</a>
+              <a class="text" href="#" data-toggle="modal" data-target="#budget-app">Read More</a>
             </div>
           </div>
         </div>
 
-        <div class="modal fade" id="cs490">
+
+        <div class="modal fade" id="budget-app">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <h3>CS490: CS100 Exam System</h3>
+                <h3>Budget Application</h3>
               </div>
               <div class="modal-body">
-                <img src="modal-pics/exam.png" height="450" width="760" />
-                <p>Developed an online exam system. The exam system will deal with only one type of question - open
-                  ended
-                  programming questions of the form: "Write a method named calcSomthing that takes parameters named a
-                  and
-                  b of type int, calculates (whatever), and returns the appropriate value." You may choose either Java
-                  or
-                  Python as your language and assume questions will be of the level appropriate for a course similar to
-                  CS 100 or CS 113.<br><br>
-
-                  <b>Fully functional system supporting four use-cases:</b><br><br>
-
-                  Instructor may add questions to a question bank.<br>
-                  Instructor may select questions from the question bank to create an exam.<br>
-                  Student may take exam, and (after Intructor releases scores).<br>
-                  Student may check exam score and feedback.</p>
+                <img src="modal-pics/budgetpic.png" height="450" width="760" />
+                <p>Application allows user to add income and expenses for a certain month and calculates how much money
+                  was made and spent in that month.<br />
+                  This application was done in during my, "The Complete JavaScript Course: 2018", by Jonas Schmedtmann<br /><br />
+                  <b>*Application displays overall income and expense.</b><br /><br />
+                  <b>*Gives the user the option to delete an item from the list in case an error was made.</b><br /></p>
               </div>
               <div class="modal-footer">
-                <!-- <a href="https://github.com/mabdelmenam/PricelineHackathon"><img src="modal-pics/github.png" width="44" height="44"/></a>-->
+                <a href="https://github.com/mabdelmenam/Budget-App-Project"><img src="modal-pics/github.png" width="44"
+                    height="44" /></a>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
               </div>
             </div>
@@ -197,53 +271,6 @@
         <!--PROJECT 3 END-->
       </div>
       <!--END ROW-->
-      <!--SENIOR PROJECT START-->
-      <div class="row space-under">
-        <div class="column">
-          <div class="contain space">
-            <img src="pics/monster.png" class="image" /> <!-- 334 x 334 -->
-            <div class="overlap">
-              <a class="text" href="#" data-toggle="modal" data-target="#monster-homicide">Read More</a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="modal fade" id="monster-homicide">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h3>Monster Homicide</h3>
-              </div>
-              <div class="modal-body">
-                <img src="modal-pics/monsterpic.png" height="450" width="760" />
-                <p>• Created a 2D-Platformer game using the Godot Game Engine, along with the GDScript programming
-                  language.<br />
-                  • Gained a new outlook on learning a new technology, and the time it takes to grasping and getting
-                  used to it.<br /><br />
-                  <b>Controls: <br />
-                    *Movement: Left and Right Arrow Keys<br />
-                    *Jump: Up Arrow Key<br />
-                    *Attack: X</b>
-
-                  <h4><b>IMPORTANT: Due to a bug with the game engine when exporting into HTML, try and use Firefox
-                      when trying to run the game instead of Google Chrome.
-                      If volume does not work, then also go and use FireFox to run the game.</b></h4>
-                </p>
-
-              </div>
-              <div class="modal-footer">
-                <a href="https://github.com/mabdelmenam/Monster-Homicide"><img src="modal-pics/github.png" width="44"
-                    height="44" /></a>
-                <a href="\~ma645\portfolio\MonsterHomicide\MonsterHomicide.html">Play Game<img src="modal-pics/play.jpg"
-                    width="75" height="44" /></a>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--SENIOR PROJECT END-->
       <h4 id="volunteering" class="text-center" style="padding-bottom:65px;padding-top: 65px; font-size:2.5em;"><u>Volunteer
           Work</u></h4>
       <!--SECTION 3 TITLE-->
@@ -267,13 +294,16 @@
               </div>
               <div class="modal-body">
                 <img src="modal-pics-volunteer/bbnj.jpg" height="450" width="760" />
-                <p>The Building Blocks of NJ, also known as The BBNJ, is a community service organization. We are a 501
+                <p>The Building Blocks of NJ, also known as The BBNJ, is a community service organization. We are a
+                  501
                   (c)(3) tax exempt organization. Our volunteers, donors, supporters, and partners have been working
                   together to empower individuals and families in the community to over come challenges. We strive to
                   to meet and exceed our communities needs by making making all our meals Halal and economically
                   friendly.</br></br>
-                  <b>I have now been going to the Building Blocks of NJ for 3 years, since 2015. We meet every Saturday
-                    morning to make meals and small lunches for those in need. It is definetly worthwhile, as you give
+                  <b>I have now been going to the Building Blocks of NJ for 3 years, since 2015. We meet every
+                    Saturday
+                    morning to make meals and small lunches for those in need. It is definetly worthwhile, as you
+                    give
                     back to the community and establish a genuine brotherhood with the people you meet there.</b></p>
               </div>
               <div class="modal-footer">
@@ -306,7 +336,8 @@
               <img src="modal-pics-volunteer/blood-donor.jpg" height="450" width="760" />
               <p>According to the American Red Cross, blood is needed every <b>2</b> seconds and about <b>37</b>
                 percent of the country's population is elgible to donate blood, and only <b style="font-size:16;">10%</b>
-                of those who can donate, actually donate.</br></br>This is something I do on the side when I can, as it
+                of those who can donate, actually donate.</br></br>This is something I do on the side when I can, as
+                it
                 helps me take a quick step back to destress, clear, and refresh my mind.</p>
             </div>
             <div class="modal-footer">
@@ -320,7 +351,8 @@
     <!--END ROW-->
     <!--VOLUNTEER 2 END-->
     <!--CONTACT FORM START-->
-    <h4 id="contact" class="text-center" style="padding-bottom:65px;padding-top: 65px; font-size:2.5em;"><u>Contact Me</u></h4>
+    <h4 id="contact" class="text-center" style="padding-bottom:65px;padding-top: 65px; font-size:2.5em;"><u>Contact
+        Me</u></h4>
     <!--SECTION 4 TITLE-->
     <div class="container" style="margin-top: 30px" ;>
       <div class="row justify-content-center">

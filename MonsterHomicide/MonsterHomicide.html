@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
 <head>
 	<meta charset="utf-8" />
 	<title></title>
 	<style type="text/css">
-
 		body {
 			margin: 0;
 			border: 0 none;
@@ -27,7 +27,8 @@
 		}
 
 		button.godot {
-			font-family: 'Droid Sans', Arial, sans-serif; /* override user agent style */
+			font-family: 'Droid Sans', Arial, sans-serif;
+			/* override user agent style */
 			padding: 1px 5px;
 			background-color: #37353f;
 			background-image: linear-gradient(to bottom, #413e49, #3a3842);
@@ -65,9 +66,12 @@
 		 * ================ */
 
 		#container {
-			display: inline-block; /* scale with canvas */
-			vertical-align: top; /* prevent extra height */
-			position: relative; /* root for absolutely positioned overlay */
+			display: inline-block;
+			/* scale with canvas */
+			vertical-align: top;
+			/* prevent extra height */
+			position: relative;
+			/* root for absolutely positioned overlay */
 			margin: 0;
 			border: 0 none;
 			padding: 0;
@@ -128,7 +132,7 @@
 			position: relative;
 		}
 
-		#status-indeterminate > div {
+		#status-indeterminate>div {
 			width: 3px;
 			height: 0;
 			border-style: solid;
@@ -138,14 +142,37 @@
 			position: absolute;
 		}
 
-		#status-indeterminate > div:nth-child(1) { transform: rotate( 22.5deg); }
-		#status-indeterminate > div:nth-child(2) { transform: rotate( 67.5deg); }
-		#status-indeterminate > div:nth-child(3) { transform: rotate(112.5deg); }
-		#status-indeterminate > div:nth-child(4) { transform: rotate(157.5deg); }
-		#status-indeterminate > div:nth-child(5) { transform: rotate(202.5deg); }
-		#status-indeterminate > div:nth-child(6) { transform: rotate(247.5deg); }
-		#status-indeterminate > div:nth-child(7) { transform: rotate(292.5deg); }
-		#status-indeterminate > div:nth-child(8) { transform: rotate(337.5deg); }
+		#status-indeterminate>div:nth-child(1) {
+			transform: rotate(22.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(2) {
+			transform: rotate(67.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(3) {
+			transform: rotate(112.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(4) {
+			transform: rotate(157.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(5) {
+			transform: rotate(202.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(6) {
+			transform: rotate(247.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(7) {
+			transform: rotate(292.5deg);
+		}
+
+		#status-indeterminate>div:nth-child(8) {
+			transform: rotate(337.5deg);
+		}
 
 		#status-notice {
 			margin: 0 100px;
@@ -193,6 +220,7 @@
 	</style>
 
 </head>
+
 <body>
 	<div id="container">
 		<canvas id="canvas" width="640" height="480">
@@ -200,7 +228,9 @@
 			Please try updating or use a different browser.
 		</canvas>
 		<div id="status">
-			<div id='status-progress' style='display: none;' oncontextmenu="event.preventDefault();"><div id ='status-progress-inner'></div></div>
+			<div id='status-progress' style='display: none;' oncontextmenu="event.preventDefault();">
+				<div id='status-progress-inner'></div>
+			</div>
 			<div id='status-indeterminate' style='display: none;' oncontextmenu="event.preventDefault();">
 				<div></div>
 				<div></div>
@@ -214,12 +244,27 @@
 			<div id="status-notice" class="godot" style='display: none;'></div>
 		</div>
 	</div>
+	<div id="game_controls" style="font-size: 1.7vw;
+    color: #15c77d;
+    font-family: monospace;">
+		<b><u>Controls: </u><br />
+			Movement: Left and Right Arrow Keys<br />
+			Jump: Up Arrow Key<br />
+			Attack: X</b><br>
+		<b style="color: red; font-size: 1.4vw">
+			IMPORTANT: Due to a bug with the game engine when exporting into HTML, try and use Firefox
+			when trying to run the game instead of Google Chrome.
+			If volume does not work, then also go and use FireFox to run the game.
+		</b>
+	</div>
 	<div id="output-panel" class="godot">
 		<div id="output-header">
 			Output:
 			<button id='output-clear' class='godot' type='button' autocomplete='off'>Clear</button>
 		</div>
-		<div id="output-container"><div id="output-scroll"></div></div>
+		<div id="output-container" display="none">
+			<div id="output-scroll"></div>
+		</div>
 	</div>
 
 	<script type="text/javascript" src="Monster Homicide.js"></script>
@@ -227,7 +272,7 @@
 
 		var engine = new Engine;
 
-		(function() {
+		(function () {
 
 			const BASENAME = 'Monster Homicide';
 			const DEBUG_ENABLED = true;
@@ -303,7 +348,7 @@
 			engine.setProgressFunc((current, total) => {
 
 				if (total > 0) {
-					statusProgressInner.style.width = current/total * 100 + '%';
+					statusProgressInner.style.width = current / total * 100 + '%';
 					setStatusMode('progress');
 					if (current === total) {
 						// wait for progress bar animation
@@ -382,5 +427,5 @@
 		})();
 	//]]></script>
 </body>
-</html>
 
+</html>
