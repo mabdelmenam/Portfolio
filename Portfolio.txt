@@ -1,0 +1,14 @@
+under public_html....profile.....index.html or index.php
+pic.png is the picture ( 100x100)
+
+What to include: 
+1) Start collecting testimonials 
+ -Any project, competetion, etc.. that I have worked on, whoever I worked on with it, have them give me a good review    on the website.
+2) Put all the projects I have worked on, on the portfolio
+ -Link them, post a screenshot, description, and process of it.
+3) Put any extra-side volunteer work
+ -How did I apply my skills in real life?
+ -Volunteering in BBNJ, masjid, YM...etc
+4) About me
+ -How I became a CS Student, what path led me there
+ -My interests and hobbies

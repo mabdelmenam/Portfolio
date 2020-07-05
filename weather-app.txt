@@ -1,0 +1,71 @@
+<!--PROJECT 2 START-->
+  <div class="column">
+      <div class="contain space">
+      <img src="pics/weather.png" class="image"/> <!-- 334 x 334 -->
+        <div class="overlap">
+          <a class="text" href="#" data-toggle="modal" data-target="#weather-app">Read More</a>
+        </div>
+    </div>
+  </div>
+    
+      <div class="modal fade" id="weather-app">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Weather Display System</h3>
+            </div>
+            <div class="modal-body">
+        <img src="modal-pics/budgetpic.png" height="450" width="760"/>
+                <p>Application is a Web Scraper used to extract specific data concering weather conditions in different areas, based off of their longitude and latitude. Web data such as the state and city's name, degrees, condition<b>(clear, cloudy, etc)</b>, humidity, and barometer pressure were all extracted. </br></br>
+                  
+                  •	Created a Shell Script to download the webpages required using wget and tagsoup</br>
+
+                    •	Python script to traverse the webpages using the DOM</br>
+                    
+                    •	SQL Database used to store data from the Python script</br>
+                    
+                    •	PHP script to retrieve data from the database and serve it in HTML form using Apache Webserver</p>
+            </div>
+            <div class="modal-footer">
+          <a href="https://github.com/mabdelmenam/Weather-Display-System"><img src="modal-pics/github.png" width="44" height="44"/></a>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--PROJECT 2 END--><!--PROJECT 2 START-->
+  <div class="column">
+      <div class="contain space">
+      <img src="pics/weather.png" class="image"/> <!-- 334 x 334 -->
+        <div class="overlap">
+          <a class="text" href="#" data-toggle="modal" data-target="#weather-app">Read More</a>
+        </div>
+    </div>
+  </div>
+    
+      <div class="modal fade" id="weather-app">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Weather Display System</h3>
+            </div>
+            <div class="modal-body">
+        <img src="modal-pics/budgetpic.png" height="450" width="760"/>
+                <p>Application is a Web Scraper used to extract specific data concering weather conditions in different areas, based off of their longitude and latitude. Web data such as the state and city's name, degrees, condition<b>(clear, cloudy, etc)</b>, humidity, and barometer pressure were all extracted. </br></br>
+                  
+                  •	Created a Shell Script to download the webpages required using wget and tagsoup</br>
+
+                    •	Python script to traverse the webpages using the DOM</br>
+                    
+                    •	SQL Database used to store data from the Python script</br>
+                    
+                    •	PHP script to retrieve data from the database and serve it in HTML form using Apache Webserver</p>
+            </div>
+            <div class="modal-footer">
+          <a href="https://github.com/mabdelmenam/Weather-Display-System"><img src="modal-pics/github.png" width="44" height="44"/></a>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--PROJECT 2 END-->
