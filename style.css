@@ -1,35 +1,14 @@
-/* NOT USED*/
-.text-bottom
-{
-    
-    position:absolute;    
-    color:white;
-    font-size: 17px;
-    font-weight:bold;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-    text-align:center;
-    bottom: 43px;
-    width: 334px;
-    background: #2b1c22;
-
-   
-}
-
 .space-under{
   padding-bottom: 50px;
   position: relative;
   left: 15px;
 }
 /******************************/
- @media handheld ,only screen and (min-width: 500px){
-  #about-me-info{
-    font-size: 0.9vw;  
-  }
-} 
-#about-me-section{
-  align-items: center;
+.titles{
+  padding-bottom:4rem; /* 64px 4rem */
+  padding-top: 4rem; 
+  font-size:2.5em;
 }
-
 /*HOVER EFFECT*/
 .contain {
     position: relative;
@@ -41,8 +20,8 @@
   
   .image {
     display: block;
-    width: 334px;
-    height: 334px;
+    width: 20.875rem; /* 334px 20.875 rem */
+    height: 20.875rem;
     height: auto;
   }
   
@@ -53,8 +32,8 @@
     left: 0;
     right: 0;
     opacity: 0;
-    height: 334px;
-    width: 334px;
+    height: 20.875rem;
+    width: 20.875rem;
     transition: .5s ease;
     background-color: rgb(158, 158, 158);
   }
@@ -65,7 +44,7 @@
   
   .text {
     color: white;
-    font-size: 28px;
+    font-size: 1.75em; /* 1.75em 28px */
     font-weight:bold;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     position: absolute;
@@ -80,17 +59,28 @@
     text-decoration: none;
     color: rgb(0, 0, 0);
   }
+  #about-me{
+    font-size:2.5rem;
+  }
   #about-me-info{
-    font-size: 1.2vw; /*1.19em, 19px*/
+    font-size: 1.19em; /* 1.2vw 1.19em, 19px*/
     font-weight: bold;
     font-family:"Trebuchet MS", Helvetica, sans-serif;
     text-align:center;
-    padding-left: 230px;
+    /*padding-left: 230px;
     padding-right: 230px;
     padding-bottom: 30px;
     padding-top: 35px;
     top: 50%;
-    left:50%;
+    left:50%;*/
+  }
+  #main-image{
+    height:14.25em;
+    width:14.25em;
+  }
+  .modal-pics{
+    height:auto;
+    width:100%;
   }
 .errors{
     position: relative;
@@ -122,19 +112,3 @@
     margin:0 auto;
     position: absolute;
   }
- /* * {
-    box-sizing: border-box;
-}
-
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-}
-
- Clearfix (clear floats) 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}*/

@@ -1,0 +1,93 @@
+@media only screen and (max-width:768px){ /*Tablet*/
+    #rows_for_editing{
+        /*Making flex display for images*/
+        flex-direction: column;
+        align-content: center;
+        padding-right: 13rem;
+    }
+    .titles{
+        padding-top:1.25rem;
+        padding-bottom:1.25rem;
+        font-size:2rem;
+    }
+    .image{
+        /*Distance between images*/
+        padding-top:2.5rem;
+    }
+    .overlap{
+        /*Moving the overlap down on top of the image */
+        margin-top:2.5rem;
+    }
+    .jumbotron{ /*Header*/
+        padding: 1rem 0.5rem;
+    }
+    .jumbotron-heading{
+        font-size: 2.0rem;
+    }
+    #game-text{
+        font-size: 1.0rem;
+    }
+    #about-me{
+        font-size:2rem;
+    }
+}
+@media only screen and (max-width:360px){
+    .image{
+        width: 17rem;
+        height: 17rem;
+        padding-top:2.0rem;
+    }
+    /*resize fonts*/
+    .titles{
+        padding-top:1.0rem;
+        padding-bottom:1.0rem;
+        font-size:1.5rem;
+    }
+    .overlap{
+        /*Moving the overlap down on top of the image */
+        margin-top:2rem;
+        width: 17rem;
+        height: 15rem;
+    }
+    .jumbotron{ /*Header*/
+        padding: 0.75rem 0.35rem;
+    }
+    .jumbotron-heading{
+        font-size: 1.5rem;
+        display:flex; /*to make heading straight again*/
+    }
+    #game-text{
+        font-size: 0.75rem;
+    }
+    #about-me{
+        font-size:1.5rem;
+    }
+    #about-me-info{
+        font-size:0.95em;
+    }
+    #main-image{
+        height: 10.0em;
+        width: 10.0em;
+    }
+    .sticky-top{
+        font-size:0.85rem;
+    }
+}
+@media only screen and (min-width:425px){
+    body{/*centering everything*/
+        /*margin-left: 4vmin;*/
+        overflow-x: hidden !important;
+    }
+    #scroll-start{ /*centering images and everything under*/
+        overflow: hidden;
+        margin-left:4vmin;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:375px){
+    body{/*centering everything*/
+        overflow-x: hidden !important;
+    }
+    #scroll-start{ /*centering images and everything under*/
+        overflow: hidden;
+    }
+}
