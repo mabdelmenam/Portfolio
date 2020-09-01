@@ -30,6 +30,23 @@
     #about-me{
         font-size:2rem;
     }
+    /*Toggle Button*/
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-dark{
+        height:3rem;
+    }
+    .navCollapse{
+        width: 100%;
+        display:none;
+    }
+  /*  .navCollapse li{
+        text-align: center;
+    }*/
+    .navCollapse li a{
+        padding: 0.25rem 1rem;
+    }
 }
 @media only screen and (max-width:360px){
     .image{

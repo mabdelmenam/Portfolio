@@ -4,11 +4,6 @@
   <title>Mohamed Abdelmenam</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Latest compiled and minified CSS-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,8 +11,14 @@
   <!-- Popper JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
+  <!--Latest compiled and minified CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -32,24 +33,54 @@
       </p>
     </div>
   </section>
+
   <!--NAVIGATION BAR START-->
   <nav class="navbar sticky-top navbar-expand-lg toggle-height navbar-dark bg-dark" id="sticky">
     <!--<a class="navbar-brand" href="#" style="padding-bottom: 10px; color: white;"></a>-->
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#about-me">About Me</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#volunteering">Volunteer Work</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact Me</a>
-      </li>
-    </ul>
+    <a href="#" class="toggle-button">
+      <!--navbar-collapse data-toggle="collapse" data-target="#navCollapse"-->
+      <span class="bars"></span>
+      <span class="bars"></span>
+      <span class="bars"></span>
+    </a>
+    <div class="navCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about-me">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#volunteering">Volunteer Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Me</a>
+        </li>
+      </ul>
+    </div>
   </nav>
+  <script>
+    var isShown = false;
+    const toggleButton = document.getElementsByClassName('toggle-button')[0];
+    const navbarLinks = document.getElementsByClassName('navCollapse')[0];
+    var navbar = document.getElementById('sticky');
+
+    toggleButton.addEventListener('click', () => {
+      if (isShown) {
+        console.log("First IF: " + isShown);
+        navbarLinks.style.display = 'none';
+        navbar.style.height = '3rem';
+        isShown = false;
+      } else {
+        console.log("Second IF: " + isShown);
+        navbarLinks.style.display = 'block';
+        isShown = true;
+        navbar.style.height = '9rem';
+      }
+    })
+
+  </script>
   <!--NAVIGATION BAR END-->
   <div id="scroll-start" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
     <!--SECTION 1 TITLE-->
@@ -120,7 +151,7 @@
                 <h3>Monster Homicide</h3>
               </div>
               <div class="modal-body">
-                <img src="modal-pics/monsterpic.png" class="modal-pics" />
+                <img src="modal-pics/monster-pic.png" class="modal-pics" />
                 <p>• Created a 2D-Platformer game using the Godot Game Engine, along with the GDScript programming
                   language.<br />
                   • Gained a new outlook on learning a new technology, and the time it takes to grasping and getting
@@ -215,7 +246,7 @@
                 <h3>Priceline Hackathon: <b>Crime Time</b></h3>
               </div>
               <div class="modal-body">
-                <img src="modal-pics/priceline.png" class="modal-pics" />
+                <img src="modal-pics/priceline-pic.png" class="modal-pics" />
                 <p><b>Hackathon theme was Social Good. Idea was to create a webapp that can warn people of potentially
                     dangerous areas based on the colors of the markers on the map.</b></br>
 
@@ -261,7 +292,7 @@
                 <h3>Budget Application</h3>
               </div>
               <div class="modal-body">
-                <img src="modal-pics/budgetpic.png" class="modal-pics" />
+                <img src="modal-pics/budget-pic.png" class="modal-pics" />
                 <p>Application allows user to add income and expenses for a certain month and calculates how much money
                   was made and spent in that month.<br />
                   This application was done in during my, "The Complete JavaScript Course: 2018", by Jonas Schmedtmann<br /><br />
