@@ -13,8 +13,8 @@ What to include:
  -How I became a CS Student, what path led me there
  -My interests and hobbies
 
-I am a recent graduate from Rutgers University with a degree in Computer Science. I am
-        currently pursuing a career in software development and am willing to relocate to do so. Some of the skills used
+I am a recent graduate from Rutgers University with a degree in Computer Science.
+        Currently pursuing a career in software development and am willing to relocate to do so. Some of the skills used
         in my projects range from from HTML, CSS, and JavaScript to PHP, Python, and SQL.<br>I am always trying to learn
         and consider myself to be a team-player, in that productivity is at its peak when all parties involved are
         working cohesively.
