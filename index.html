@@ -68,12 +68,10 @@
 
     toggleButton.addEventListener('click', () => {
       if (isShown) {
-        console.log("First IF: " + isShown);
         navbarLinks.style.display = 'none';
         navbar.style.height = '3rem';
         isShown = false;
       } else {
-        console.log("Second IF: " + isShown);
         navbarLinks.style.display = 'block';
         isShown = true;
         navbar.style.height = '9rem';
@@ -107,10 +105,14 @@
       </div>
     </div>
 
-    <!--<div class="container-for-links">
-      <a id="about-links" href="Mohamed_Abdelmenam_Resume.pdf" download>Download Resume</a>
-      <a id="about-links" href="https://github.com/mabdelmenam/"><img src="modal-pics/github.png" width="44" height="44" />GitHub</a>
-    </div>-->
+    <div class="container p-0 text-center">
+      <div class="col-md-6 col-sm-12 offset-md-3" style="margin-bottom:0.70rem;">
+        <a id="about-links" href="Mohamed_Abdelmenam_Resume.pdf" download>Download Resume</a>
+      </div>
+      <div class="col-md-6 col-sm-12 offset-md-3">
+        <a id="about-links" href="https://github.com/mabdelmenam/"><img src="modal-pics/github.png" width="44" height="44" />GitHub</a>
+      </div>
+    </div>
 
     <h4 id="projects" class="text-center titles"><u>Projects</u></h4>
     <!--SECTION 2 TITLE-->
@@ -129,7 +131,37 @@
             </div>
           </div>
         </div>
-        <!--PUT HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE-->
+
+        <div class="modal fade" id="restaurant">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3>Restaurant-Webpage</h3>
+              </div>
+              <div class="modal-body">
+                <img src="modal-pics/restaurant-index.png" class="modal-pics" />
+                <p>Restaurant webpage</p>
+                <p>
+                  Restaurant website used for customers to be able to navigate the restaurant’s menu and food options,
+                  then be able to order those foods online and have them delivered to their homes.
+                  Inspiration for this project was taken from Gruhub and other food delivery services but created on a
+                  smaller scale.
+                  <br />
+                  <b>Software Used:</b><br />
+                  Website was created using HTML, CSS, JavaScript, Pythons Flask Framework, and SQL.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <a href="https://github.com/mabdelmenam/Restaurant-Webpage"><img src="modal-pics/github.png" width="44"
+                    height="44" /></a>
+                <a href="https://restaurant-appl.herokuapp.com/">Visit Website<img src="modal-pics/play.jpg" width="75"
+                    height="44" /></a>
+
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <!--RESTAURANT PROJECT END-->
         <!--SENIOR PROJECT START-->
         <div class="col-md-4 col-sm-12">
@@ -392,22 +424,6 @@
       </div>
     </div>
     <!--END ROW-->
-    <div class="modal fade" id="restaurant">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3>CS490: CS100 Exam System</h3>
-          </div>
-          <div class="modal-body">
-            <img src="modal-pics/exam.png" class="modal-pics" />
-            <p>Restaurant webpage</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
     <!--VOLUNTEER 2 END-->
     <!--CONTACT FORM START-->
     <h4 id="contact" class="text-center titles"><u>Contact

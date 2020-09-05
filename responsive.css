@@ -41,9 +41,9 @@
         width: 100%;
         display:none;
     }
-  /*  .navCollapse li{
-        text-align: center;
-    }*/
+    .navCollapse li{
+        width:50%;    
+    }
     .navCollapse li a{
         padding: 0.25rem 1rem;
     }
