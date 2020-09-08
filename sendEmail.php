@@ -18,7 +18,7 @@
         $mail->isSMTP();
         $mail->SMTPAuth = true;
         $mail->Username = 'mabdelmenam511@gmail.com';
-        $mail->Password = 'c}Rqj7X[aZ).mw6:Um\W~!xD.9!/GczTS.`Zd2=*';
+        $mail->Password = 'yup';
         $mail->SMTPSecure = "tls";//tls //ssl
         $mail->Port = 587; // TLS is 587 // 465
 

@@ -1,53 +1,48 @@
-function contact(){
-    var info = { 
+function contact() {
+    var info = {
         subject: document.getElementById("subject"),
         email: document.getElementById("email"),
         message: document.getElementById("message"),
         submit: document.getElementById("submit"),
         name: document.getElementById("name")
     };
-    /*if(info.name.value == ""){
-        console.log("entered");
-        document.getElementById('name_error').innerHTML="Name is Required";
+
+    var a = empty(info.name.value, "name_error");
+    var b = empty(info.email.value, "email_error");
+    var c = empty(info.message.value, "message_error");
+    var d = empty(info.subject.value, "subject_error");
+
+    if (a == false || b == false || c == false || d == false) {
         return false;
-    }*/
-    empty(info.name.value, "name_error");
-    empty(info.email.value, "email_error");
-    empty(info.message.value, "message_error");
-    empty(info.subject.value, "subject_error");
+    }
+    else {
+        const requestData = `subject=${info.subject.value}&email=${info.email.value}&message=${info.message.value}&submit=${info.submit.value}&name=${info.name.value}`;
 
-    /*var msg = "";
-    if((info.name.value && info.email.value && info.subject.value && info.message.value) != ""){
-        msg = "Your email has been sent, thanks";
-        info.name.value = info.email.value = info.subject.value = info.message.value = "";
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("msg").innerHTML = "Sent";
+                setTimeout(function () {
+                    document.getElementById("msg").innerHTML = "";
+                }, 5000);
+            }
+        };
+        xhttp.open("POST", "sendEmail.php", true);
+        xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xhttp.send(requestData);
     }
-    else if((info.subject.value && info.name.value ) == ""){
-
-    }
-    else{
-        msg = "Not Sent";
-        return;
-    }
-*/
-    const requestData = `subject=${info.subject.value}&email=${info.email.value}&message=${info.message.value}&submit=${info.submit.value}&name=${info.name.value}`;
-
-    var xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("msg").innerHTML = "Sent"; 
-    }
-      };
-      xhttp.open("POST", "sendEmail.php", true);
-      xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-      xhttp.send(requestData);
 }
-function empty(input, id){
-    if(input == ""){
-        document.getElementById(id).innerHTML="Field cannot be empty.";
-        return false;
+function empty(input, id) {
+    notEmpty = false;
+    if (input == "") {
+        document.getElementById(id).innerHTML = "Field cannot be empty.";
+        console.log(notEmpty)
+        return notEmpty; // false
     }
-    else{
-        document.getElementById(id).innerHTML="";
-        return true;
+    else {
+        document.getElementById(id).innerHTML = "";
+        notEmpty = true;
+        console.log(notEmpty);
+        return notEmpty; //true
     }
 }
